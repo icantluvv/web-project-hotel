@@ -1,0 +1,179 @@
+@import "variable";
+
+.order {
+    width: 100%;
+    height: auto;
+    background-color: #fbfbfb;
+    display: flex;
+    margin-bottom: 5em;
+    justify-content: center;
+
+    .order_container {
+        width: auto;
+        min-width: 85%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+
+        .score {
+            margin-top: 5em;
+            height: auto;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .score_image_container {
+                width: 100%;
+                height: auto;
+
+                .score_image {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .points {
+                width: 100%;
+                margin-top: 1em;
+                display: flex;
+                flex-direction: row;
+
+                .first_point {
+                    width: 37%;
+                    display: flex;
+                    font-family: "Mont_Reg";
+                    justify-content: center;
+                    color: $blue;
+                }
+
+                .second_point {
+                    width: 27%;
+                    display: flex;
+                    font-family: "Mont_Reg";
+                    color: $blue;
+                    justify-content: center;
+                }
+
+                .third_point {
+                    width: 36%;
+                    font-family: "Mont_Reg";
+                    display: flex;
+                    color: #c4c4c4;
+                    justify-content: center;
+                }
+            }
+        }
+
+        .info {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .info_head {
+                margin-top: 5em;
+                width: 100%;
+                height: auto;
+                background-color: $orange;
+                text-align: center;
+                padding-top: 1em;
+                padding-bottom: 1em;
+
+                h1 {
+                    width: 100%;
+                    font-size: 20px;
+                    color: white;
+                    font-family: "Mont_Mid";
+                }
+            }
+
+            .input_text {
+                display: flex;
+                align-items: flex-start;
+                width: 70%;
+                flex-direction: column;
+                margin-top: 4em;
+                margin-bottom: 4em;
+
+                .type_and_food {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    .type,
+                    .food {
+                        width: 31%;
+                        height: 36px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        padding-left: 1em;
+                        margin-right: 1em;
+                        border: 1px solid #d9d9d9;
+                        font-family: "Mont_Reg";
+                        color: #c4c4c4;
+                    }
+                }
+                .title_guest {
+                    margin-top: 3em;
+                    height: auto;
+                    width: 100%;
+                    text-align: center;
+                    font-family: "Mont_Mid";
+                }
+                .guest {
+                    height: 336px;
+                    display: flex;
+                    margin-top: 1em;
+                    width: 100%;
+                    justify-content: space-between;
+
+                    .main_info {
+                        display: flex;
+                        width: 33%;
+                        height: 100%;
+                        justify-content: space-between;
+                        flex-direction: column;
+
+                        .input_imfo {
+                            height: 36px;
+                            padding-left: 1em;
+                            background-color: transparent;
+                            border: 1px solid #d9d9d9;
+                            font-family: "Mont_Reg";
+                        }
+                    }
+
+                    .special_wants {
+                        width: 65%;
+
+                        .input_special {
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            border: 1px solid #d9d9d9;
+                            font-family: "Mont_Reg";
+                        }
+                    }
+                }
+            }
+
+            .button_go_order {
+                width: 180px;
+                height: 40px;
+                border: none;
+                background-color: $blue;
+                border-radius: 6px;
+                color: white;
+                font-family: "Mont_Reg";
+                box-shadow: 0px 0.125rem 0.625rem rgba(63, 140, 255, 0.5);
+            }
+        }
+    }
+}

@@ -1,0 +1,182 @@
+@import "variable";
+
+@media screen and (min-width: $desktop) {
+    .article {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5em;
+
+        .name {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 10vh;
+            color: #585858;
+            font-family: "Mont_Mid";
+        }
+
+        .columns {
+            margin-top: 5vh;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+
+            .column1,
+            .column2 {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+
+                .info,
+                .info2 {
+                    width: 85%;
+                    max-width: 612px;
+                    height: 20em;
+                    padding-bottom: 4em;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    .name_of_article {
+                        height: auto;
+                        font-size: 30px;
+                        display: flex;
+                        width: auto;
+                        align-items: flex-start;
+                        color: #ffffff;
+                        margin-bottom: 1em;
+                        margin-top: 1em;
+                        padding-left: 1em;
+                    }
+
+                    .text_of_article {
+                        color: #ffffff;
+                        height: auto;
+                        width: auto;
+                        display: flex;
+                        font-size: 16px;
+                        align-items: center;
+                        padding-left: 1em;
+                        padding-right: 1em;
+                        text-indent: 30px;
+                    }
+                }
+
+                .info {
+                    background-color: $orange;
+                }
+
+                .info2 {
+                    background-color: $blue;
+                }
+            }
+            .column1 {
+                align-items: flex-end;
+            }
+        }
+    }
+}
+
+.name_of_article {
+    font-family: "Mont_Mid";
+}
+
+.text_of_article {
+    font-family: "Mont_Light";
+}
+
+.name {
+    font-family: "Mont_Mid";
+}
+
+@media screen and (max-width: $desktop) {
+    .article {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5em;
+
+        .name {
+            margin-top: 2em;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .columns {
+            margin-top: 2em;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .column1,
+            .column2 {
+                width: 90%;
+                max-width: 600px;
+                display: flex;
+                flex-direction: column;
+
+                .info,
+                .info2 {
+                    width: auto;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 2em;
+                    padding: 1em;
+                    padding-bottom: 1em;
+                    border-radius: 6px;
+
+                    .name_of_article {
+                        height: 15%;
+                        display: flex;
+                        color: #ffffff;
+                        padding-left: 1.5vw;
+                        padding-right: 1.5vw;
+                    }
+
+                    .text_of_article {
+                        color: #ffffff;
+                        height: auto;
+                        width: 100%;
+                        display: flex;
+                        font-size: 16px;
+                        align-items: center;
+                        margin-bottom: 0.5em;
+                        margin-top: 0.5em;
+                        text-indent: 30px;
+                    }
+
+                    .button_container {
+                        width: 100%;
+                        height: 25%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .button {
+                            width: 50%;
+                            height: 3em;
+                            border-radius: 10px;
+                            font-size: 16px;
+                            background-color: transparent;
+                            border: 1px solid #ffffff;
+                            color: #ffffff;
+                        }
+                    }
+                }
+
+                .info {
+                    background-color: $orange;
+                }
+
+                .info2 {
+                    background-color: $blue;
+                }
+            }
+        }
+    }
+}

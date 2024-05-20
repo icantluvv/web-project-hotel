@@ -1,0 +1,28 @@
+.user {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    .user__info_container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        .button_logout {
+            background-color: black;
+            color: white;
+            border-radius: 6px;
+            border: none;
+            height: 4em;
+            width: 15em;
+            font-family: "Mont_Mid";
+        }
+
+        .button_logout:hover {
+            background-color: rgb(103, 103, 103);
+        }
+    }
+}

@@ -1,0 +1,442 @@
+@import "../variable";
+
+.cards__card {
+    .card_info_container {
+        .card_info_texts {
+            .card_info_texts__info__text {
+                h1 {
+                    font-family: "Mont_Mid";
+                }
+                p {
+                    font-family: "Mont_Reg";
+                }
+
+                .info_text_from_server {
+                    .info_text__description_container {
+                        p {
+                        }
+                        font-family: "Mont_Reg";
+
+                        .info_text__description {
+                            font-family: "Mont_Mid";
+                        }
+
+                        span {
+                            font-family: "Mont_Semi";
+                        }
+                    }
+                }
+            }
+        }
+
+        .card_info_container__choose_buttons {
+            .choose_buttons__food_type {
+                p {
+                    font-family: "Mont_Reg";
+                }
+
+                h3 {
+                    font-family: "Mont_Mid";
+                }
+
+                .button_select {
+                    font-family: "Mont_Reg";
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .cards__card {
+        width: 100%;
+        height: auto;
+        box-shadow: 0px 0.125rem 0.625rem rgba(0, 0, 0, 0.25);
+        border-radius: 6px;
+        padding: 1.25rem;
+        padding-bottom: 2.5rem;
+        margin-bottom: 2.5rem;
+        transition: 0.2s;
+
+        .card_info_container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            .card_info_container__img_container {
+                width: 37%;
+                max-width: 282px;
+                height: 100%;
+
+                .card_img {
+                    width: 282px !important;
+                    height: 300px !important;
+                }
+            }
+
+            .card_info_texts {
+                flex: 1;
+                width: auto;
+                padding-left: 2em;
+                padding-right: 2em;
+                height: 100%;
+
+                .card_info_texts__info__text {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    font-size: 14px;
+
+                    h1 {
+                        font-family: "Mont_Mid";
+                        font-size: 26px;
+                        color: #585858;
+                        font-weight: 500;
+                    }
+                    p {
+                        font-family: "Mont_Reg";
+                        color: #585858;
+                        width: 100%;
+                        margin-top: 0.2em;
+                    }
+
+                    .info__text__head {
+                        display: flex;
+                        height: auto;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+
+                    .info_text_from_server {
+                        margin-top: 1em;
+                        width: 100%;
+
+                        .info_text__description_container {
+                            font-family: "Mont_Reg";
+                            width: 100%;
+                            font-size: 14px;
+
+                            .info_text__description {
+                                font-family: "Mont_Mid";
+                                color: #777777;
+                            }
+
+                            span {
+                                font-family: "Mont_Semi";
+                                margin-right: 0.5em;
+                                color: #585858;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .card_info_container__choose_buttons {
+                width: 180px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .wall_between {
+                    width: auto;
+                    height: 1px;
+                    background-color: $blue;
+                }
+                .choose_buttons__food_type {
+                    width: auto;
+                    margin-top: 1em;
+                    margin-bottom: 1em;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    p {
+                        font-family: "Mont_Reg";
+                        font-size: 12px;
+                        color: #777777;
+                        margin-bottom: 0.2em;
+                        margin-top: 0.2em;
+                    }
+
+                    h3 {
+                        font-family: "Mont_Mid";
+                        font-size: 20px;
+                        font-weight: 400;
+                        color: $orange;
+                    }
+
+                    .button_select {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: $blue;
+                        border: none;
+                        border-radius: 10px;
+                        height: 40px;
+                        color: white;
+                        font-size: 18px;
+                        box-shadow: 0px 0.125rem 0.625rem
+                            rgba(63, 140, 255, 0.5);
+                        font-family: "Mont_Reg";
+                    }
+                }
+            }
+        }
+    }
+
+    .cards__card:hover {
+        transform: scale(1.02);
+        transition: 0.2s;
+    }
+}
+
+@media screen and (max-width: $desktop) {
+    .cards__card {
+        padding: 0;
+        width: 40%;
+        box-shadow: 0px 0.125rem 0.625rem rgba(0, 0, 0, 0.25);
+        margin-bottom: 2em;
+
+        .card_info_container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            .card_info_container__img_container {
+                width: 100%;
+                height: 100%;
+
+                .card_img {
+                    width: 100% !important;
+                    height: auto !important;
+                }
+            }
+
+            .card_info_texts {
+                max-width: 90%;
+                height: 100%;
+                text-align: center;
+
+                .card_info_texts__info__text {
+                    width: 100%;
+                    height: 100%;
+                    font-size: 12px;
+
+                    .info__text__head {
+                        display: flex;
+                        height: auto;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    .info_text_from_server {
+                        display: none;
+                        margin-top: 1em;
+                        width: 100%;
+
+                        .info_text__description {
+                            width: 100%;
+                            margin-bottom: 0.5em;
+                        }
+                    }
+
+                    .info_text__description span {
+                        margin-right: 0.5em;
+                    }
+                }
+
+                .card_info_texts__info__text h1 {
+                    margin-top: 0.5em;
+                    font-size: 18px;
+                    color: #585858;
+                }
+                .card_info_texts__info__text p {
+                    color: #676767;
+                    text-align: center;
+                    width: 100%;
+                    margin-top: 0.5em;
+                }
+            }
+
+            .card_info_container__choose_buttons {
+                width: 90%;
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+
+                .wall_between {
+                    display: none;
+                }
+
+                .choose_buttons__food_type {
+                    width: 40%;
+                    margin-top: 1em;
+                    margin-bottom: 1em;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .button_select {
+                        width: 100%;
+                        background-color: $blue;
+                        border: none;
+                        border-radius: 10px;
+                        height: 2.5rem;
+                        color: white;
+                        font-size: 14px;
+                        box-shadow: 0px 0.125rem 0.625rem
+                            rgba(63, 140, 255, 0.5);
+                    }
+                }
+
+                .choose_buttons__food_type p {
+                    font-size: 10px;
+                    text-align: center;
+                    color: #777777;
+                    margin-bottom: 0.5em;
+                    margin-top: 0.5em;
+                }
+
+                .choose_buttons__food_type h3 {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $orange;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .cards__card {
+        padding: 0;
+        width: 100%;
+        height: 412px;
+        box-shadow: 0px 0.125rem 0.625rem rgba(0, 0, 0, 0.25);
+        margin-bottom: 2em;
+        border-radius: 6px;
+
+        .card_info_container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 300px;
+
+            .card_info_container__img_container {
+                width: 100%;
+                height: 162px;
+
+                .card_img {
+                    border-top-left-radius: 6px;
+                    border-top-right-radius: 6px;
+                    width: 100% !important;
+                    height: 162px !important;
+                    object-fit: cover;
+                }
+            }
+
+            .card_info_texts {
+                max-width: 90%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+
+                .card_info_texts__info__text {
+                    width: 80%;
+                    height: 100%;
+                    font-size: 12px;
+
+                    .info__text__head {
+                        display: flex;
+                        height: auto;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    .info_text_from_server {
+                        display: none;
+                        margin-top: 1em;
+                        width: 100%;
+
+                        .info_text__description {
+                            width: 100%;
+                            margin-bottom: 0.5em;
+                        }
+                    }
+
+                    .info_text__description span {
+                        font-weight: bold;
+                        margin-right: 0.5em;
+                    }
+                }
+
+                .card_info_texts__info__text h1 {
+                    margin-top: 0.5em;
+                    font-size: 18px;
+                    color: #585858;
+                }
+                .card_info_texts__info__text p {
+                    color: #676767;
+                    text-align: center;
+                    width: 100%;
+                    margin-top: 0.5em;
+                }
+            }
+
+            .card_info_container__choose_buttons {
+                width: 90%;
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+
+                .wall_between {
+                    display: none;
+                }
+
+                .choose_buttons__food_type {
+                    width: 40%;
+                    margin-top: 1em;
+                    margin-bottom: 1em;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .button_select {
+                        width: 100%;
+                        background-color: $blue;
+                        border: none;
+                        border-radius: 10px;
+                        height: 2.5rem;
+                        color: white;
+                        font-size: 14px;
+                        box-shadow: 0px 0.125rem 0.625rem
+                            rgba(63, 140, 255, 0.5);
+                    }
+                }
+
+                .choose_buttons__food_type p {
+                    font-size: 10px;
+                    text-align: center;
+                    color: #777777;
+                    margin-bottom: 0.5em;
+                    margin-top: 0.5em;
+                }
+
+                .choose_buttons__food_type h3 {
+                    font-size: 14px;
+                    color: $orange;
+                }
+            }
+        }
+    }
+}

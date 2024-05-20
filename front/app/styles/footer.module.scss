@@ -1,0 +1,202 @@
+@import "variable";
+
+.footer {
+    width: 100%;
+    background-color: #777777;
+    font-size: 14px;
+    color: #ffffff;
+
+    .information {
+        display: flex;
+        padding-top: 6vh;
+        padding-bottom: 6vh;
+        padding-left: 10%;
+        padding-right: 10%;
+
+        .container_for_geo_and_contacts {
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+
+            .contacts {
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+
+                .list_contacts {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+
+                    .number,
+                    .city,
+                    .street,
+                    .enternet_mail {
+                        width: 100%;
+                        .image_container {
+                            width: auto;
+                            margin-right: 1em;
+
+                            .img {
+                                width: auto !important;
+                                height: 15px !important;
+                            }
+                        }
+                    }
+                }
+                .list_contacts li {
+                    display: flex;
+                }
+            }
+
+            .contacts h1 {
+                height: 1.2em;
+            }
+
+            .geolocation {
+                width: 45%;
+                height: auto;
+
+                h1 {
+                    margin-bottom: 0.5em;
+                }
+
+                .map {
+                    width: 85%;
+                    height: auto;
+                }
+            }
+        }
+
+        .container_for_coming_and_weather {
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+
+            .weather {
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+
+                h1 {
+                    margin-bottom: 1vh;
+                }
+            }
+            .coming {
+                width: 45%;
+                display: flex;
+                flex-direction: column;
+            }
+            .coming a {
+                border-bottom: 1px solid #ffffff;
+            }
+        }
+    }
+
+    .copy {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        background-color: #626262;
+    }
+
+    .copy p {
+        font-family: "Mont_Reg";
+        font-size: 14px;
+        color: #ffffff;
+    }
+}
+
+.footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer h1 {
+    font-family: "Mont_Mid";
+    font-size: 20px;
+}
+
+.footer li {
+    padding-top: 1vh;
+    font-family: "Mont_Reg";
+}
+.footer p {
+    font-family: "Mont_Reg";
+}
+
+@media only screen and (max-width: $desktop) {
+    .footer {
+        width: 100%;
+
+        .information {
+            display: flex;
+            flex-direction: column;
+
+            .container_for_geo_and_contacts {
+                .geolocation {
+                    display: none;
+                }
+                margin-bottom: 2em;
+            }
+
+            .container_for_coming_and_weather {
+                .weather {
+                    display: none;
+                }
+            }
+
+            .container_for_geo_and_contacts,
+            .container_for_coming_and_weather {
+                width: 100%;
+
+                .contacts {
+                    width: 100%;
+
+                    .title_contacts_container {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    .list_contacts {
+                        width: 100%;
+                        .image_container {
+                            display: none;
+                        }
+
+                        .number,
+                        .city,
+                        .street,
+                        .enternet_mail {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .coming {
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+
+                    ul {
+                        width: 100%;
+                        li {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,302 @@
+@import "../variable";
+
+@media screen and (min-width: $desktop) {
+    .main_rooms {
+        background-color: #fbfbfb;
+        display: flex;
+        justify-content: center;
+        margin-top: 1vh;
+        width: 100%;
+        margin-bottom: 5em;
+
+        .container__main_rooms {
+            width: 85%;
+            background-color: #ffffff;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .user_choose {
+                height: 7.75rem;
+                width: 50%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: black;
+
+                .input_date {
+                    background-color: transparent;
+                    border: 1px solid white;
+                    padding: 1em;
+                    color: white;
+                    border-radius: 6px;
+                }
+            }
+
+            .order_score {
+                height: 11.5rem;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .score_container {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    .score {
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .points {
+                        width: 100%;
+                        margin-top: 1em;
+                        display: flex;
+                        flex-direction: row;
+
+                        .first_point {
+                            width: 33%;
+                            display: flex;
+                            font-family: "Mont_Reg";
+                            justify-content: center;
+                            color: $blue;
+                        }
+
+                        .second_point {
+                            width: 35%;
+                            display: flex;
+                            font-family: "Mont_Reg";
+                            color: #c4c4c4;
+                            justify-content: center;
+                        }
+
+                        .third_point {
+                            width: 32%;
+                            font-family: "Mont_Reg";
+                            display: flex;
+                            color: #c4c4c4;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+
+            .user_choose {
+                height: 7.75rem;
+                width: 100%;
+                background-color: $orange;
+            }
+
+            .cards {
+                margin-top: 2.5rem;
+                width: 85%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-bottom: 1.25rem;
+                align-items: center;
+            }
+        }
+
+        .rules {
+            width: 100%;
+            height: auto;
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            position: relative;
+
+            .first_rule {
+                height: 35%;
+                width: 40%;
+                background-color: $blue;
+                color: white;
+                padding: 2rem;
+                box-shadow: 0px 0.125rem 0.625rem rgba(0, 0, 0, 0.25);
+                display: flex;
+                flex-direction: column;
+
+                .text__first_rule span {
+                    font-family: "Mont_Semi";
+                    font-size: 16px;
+                    margin-right: 0.5em;
+                    width: 12em;
+                }
+                .text__first_rule p {
+                    font-family: "Mont_Reg";
+                    font-size: 14px;
+                    margin-bottom: 0.5em;
+                }
+            }
+
+            .first_rule h1 {
+                font-family: "Mont_Semi";
+                font-size: 30px;
+                font-weight: 500;
+                margin-bottom: 1em;
+            }
+
+            .second_rule {
+                width: 40%;
+                display: flex;
+                margin-top: 5em;
+                height: auto;
+                padding: 2rem;
+                margin-left: -2em;
+
+                background-color: white;
+                box-shadow: 0px 0.125rem 0.625rem rgba(0, 0, 0, 0.25);
+                flex-direction: column;
+
+                .text__seconde_rule span {
+                    font-family: "Mont_Semi";
+                    font-size: 16px;
+                    margin-right: 0.5em;
+                }
+
+                .text__seconde_rule p {
+                    font-family: "Mont_Reg";
+                    width: auto;
+                    font-size: 14px;
+                    color: #1e1e1e;
+                    margin-bottom: 0.5em;
+                }
+            }
+
+            .second_rule h1 {
+                font-family: "Mont_Semi";
+                font-size: 30px;
+                font-weight: 500;
+                margin-bottom: 1em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $desktop) {
+    .main_rooms {
+        background-color: #fbfbfb;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        .container__main_rooms {
+            width: 100%;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .order_score {
+                display: none;
+            }
+
+            .user_choose {
+                height: 7.75rem;
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: $orange;
+
+                .input_date {
+                    background-color: transparent;
+                    border: 1px solid white;
+                    padding: 1em;
+                    color: white;
+                    border-radius: 6px;
+                }
+            }
+
+            .cards {
+                margin-top: 2.5rem;
+                width: 90%;
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin-bottom: 1.25rem;
+            }
+        }
+
+        .rules {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .first_rule {
+                height: auto;
+                width: auto;
+                background-color: $blue;
+                color: white;
+                padding: 1em;
+                box-shadow: 0px 0.125rem 0.625rem rgba(0, 0, 0, 0.25);
+                display: flex;
+                flex-direction: column;
+
+                .text__first_rule span {
+                    font-family: "Mont_Semi";
+                    font-size: 14px;
+                    margin-right: 0.5em;
+                }
+                .text__first_rule p {
+                    font-family: "Mont_Reg";
+                    font-size: 12px;
+                    margin-bottom: 1em;
+                }
+            }
+
+            .first_rule h1 {
+                text-align: center;
+                font-family: "Mont_Semi";
+                font-size: 18px;
+                margin-bottom: 1em;
+            }
+
+            .second_rule {
+                margin-top: 1em;
+                width: auto;
+                padding: 2em;
+                display: flex;
+                height: auto;
+                background-color: white;
+                flex-direction: column;
+
+                .text__seconde_rule span {
+                    font-family: "Mont_Semi";
+                    font-size: 14px;
+                    margin-right: 0.5em;
+                }
+
+                .text__seconde_rule p {
+                    font-family: "Mont_Reg";
+                    width: auto;
+                    font-size: 12px;
+                    color: #1e1e1e;
+                    margin-bottom: 0.5em;
+                }
+            }
+
+            .second_rule h1 {
+                font-family: "Mont_Semi";
+                text-align: center;
+                font-size: 18px;
+                margin-bottom: 1em;
+            }
+        }
+    }
+}

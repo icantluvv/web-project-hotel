@@ -1,0 +1,23 @@
+.not_found_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+
+    .title {
+        font-family: "Mont_Mid";
+    }
+
+    .description {
+        font-family: "Mont_Reg";
+        margin-top: 3rem;
+    }
+
+    .home {
+        font-family: "Mont_Light";
+        margin-top: 1em;
+        border-bottom: 1px solid black;
+        color: gray;
+    }
+}

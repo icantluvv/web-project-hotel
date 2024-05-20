@@ -1,0 +1,185 @@
+.main_room {
+    background-color: #fbfbfb;
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+    width: 100%;
+
+    .container__main_room {
+        width: 85%;
+        background-color: #ffffff;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .order_section {
+            height: 11.5rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: "Mont_Reg";
+
+            .score_container {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                .score {
+                    width: 100%;
+                    height: auto;
+                }
+
+                .points {
+                    width: 100%;
+                    margin-top: 1em;
+                    display: flex;
+                    flex-direction: row;
+
+                    .first_point {
+                        width: 33%;
+                        display: flex;
+                        justify-content: center;
+                        color: #3f8cff;
+                    }
+
+                    .second_point {
+                        font-family: "Mont_Reg";
+                        width: 35%;
+                        display: flex;
+                        color: #c4c4c4;
+                        justify-content: center;
+                    }
+
+                    .third_point {
+                        font-family: "Mont_Reg";
+                        width: 32%;
+                        display: flex;
+                        color: #c4c4c4;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+
+        .date_section {
+            width: 100%;
+            height: 4.688em;
+            color: white;
+            background-color: #ffb23f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 20px;
+            box-shadow: 0px 0.25rem 0.625rem rgba(0, 0, 0, 0.25);
+            margin-bottom: 2em;
+        }
+
+        .info_section {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .server_title {
+                display: flex;
+                align-items: center;
+                width: 95%;
+                background-color: #ffb23f;
+                color: white;
+                height: 2.5em;
+
+                h4 {
+                    font-size: 22px;
+                    font-weight: 400;
+                    margin-left: 2em;
+                }
+            }
+
+            .description_texts {
+                display: flex;
+                width: 95%;
+                margin-top: 2em;
+                margin-bottom: 2em;
+                justify-content: space-between;
+
+                .left_column {
+                    display: flex;
+                    flex-direction: column;
+                    width: 55%;
+                    height: auto;
+                    justify-content: center;
+
+                    p {
+                        margin-bottom: 1.5em;
+                        font-weight: 200;
+                        font-size: 16px;
+                        width: 50%;
+                    }
+                }
+
+                .right_column {
+                    display: flex;
+                    width: 45%;
+                    flex-direction: column;
+
+                    p {
+                        margin-bottom: 1.5em;
+                        font-size: 16px;
+                        font-weight: 100;
+
+                        span {
+                            margin-right: 0.5em;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+
+        .photo_section {
+            width: 100%;
+            height: auto;
+            display: flex;
+            box-shadow: 0.1px 3px 0.75rem rgba(0, 0, 0, 0.25);
+            margin-bottom: 7em;
+
+            .carousel {
+                height: auto;
+                flex-grow: 1;
+                display: flex;
+                padding-top: 3em;
+                padding-bottom: 3em;
+                justify-content: space-between;
+                width: 90%;
+
+                .picture_of_room {
+                    width: 24%;
+                    height: 270px;
+                    background-color: #f3f3f3;
+                }
+            }
+
+            .left_arrow,
+            .right_arrow {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 5%;
+
+                .img_arrow {
+                    width: 16px;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

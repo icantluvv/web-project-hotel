@@ -1,0 +1,714 @@
+@import "variable";
+@media screen and (min-width: $desktop) {
+    .homepage {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        color: #1e1e1e;
+        margin-bottom: 2em;
+
+        .date_section {
+            width: auto;
+            height: auto;
+            display: flex;
+            justify-content: center;
+
+            .background {
+                width: 100%;
+                .background_image {
+                    width: 100%;
+                }
+            }
+
+            .calendar {
+                position: absolute;
+                width: 63.75%;
+                height: 18.2%;
+                background-color: white;
+                top: calc(50% - 10rem);
+            }
+        }
+
+        .mobile_date {
+            display: none;
+        }
+        .promo_section {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 2em;
+
+            .name_promo {
+                font-family: "Mont_Mid";
+                font-size: 30px;
+            }
+
+            .photo_container {
+                margin-top: 2em;
+                height: auto;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .container_cards {
+                    width: 70%;
+                    height: auto;
+                    overflow-x: auto;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: space-around;
+                    flex-wrap: wrap;
+
+                    .container_card__card {
+                        max-width: 600px;
+                        width: 45%;
+                        max-height: 300px;
+                        display: flex;
+                        margin-bottom: 1.5em;
+                        position: relative;
+
+                        .container_for_image_promo {
+                            max-width: 600px;
+                            width: 100%;
+                            height: auto;
+                            display: flex;
+                            flex-direction: column;
+
+                            .photo {
+                                display: flex;
+                                align-items: flex-start;
+                                width: 100%;
+
+                                .image_promo {
+                                    height: auto;
+                                    width: auto;
+                                }
+                            }
+
+                            .text {
+                                position: absolute;
+                                bottom: 0;
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                text-wrap: wrap;
+                                color: white;
+                                opacity: 0;
+                                transition: 0.5s;
+                                padding-bottom: 2em;
+                                background-color: rgb(0, 0, 0, 0.25);
+
+                                h2 {
+                                    font-family: "Mont_Mid";
+                                    width: 100%;
+                                    text-align: center;
+                                    font-size: 20px;
+                                }
+
+                                .promo_descriptions {
+                                    width: auto;
+                                    padding-left: 2em;
+
+                                    p {
+                                        font-family: "Mont_Reg";
+
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .container_card__card:hover {
+                        .text {
+                            opacity: 1;
+                            transition: 0.5s;
+                        }
+                    }
+                }
+            }
+        }
+
+        .about_company {
+            width: 100%;
+            margin-top: 3em;
+            height: auto;
+
+            .company_container {
+                display: flex;
+                flex-direction: column;
+                width: auto;
+                height: auto;
+                justify-content: center;
+                align-items: center;
+                padding-left: 10vw;
+                padding-right: 10vw;
+
+                .company_name {
+                    width: 100%;
+                    height: 15vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .company_name h1 {
+                    font-family: "Mont_Mid";
+                    font-size: 30px;
+                    margin-bottom: 1em;
+                }
+
+                .company_picture_text {
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    height: 100%;
+                    justify-content: space-between;
+
+                    .company_picture {
+                        width: 388px;
+                        height: 100%;
+
+                        .women {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+
+                    .company_text {
+                        width: calc(100% - 388px);
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                    }
+                    .company_text p {
+                        font-family: "Mont_Reg";
+                        padding-left: 3vw;
+                        padding-right: 3vw;
+                        font-size: 16px;
+                        color: #777777;
+                    }
+                }
+            }
+        }
+
+        .comments {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .name_comments {
+                font-size: 30px;
+                font-family: "Mont_Mid";
+            }
+
+            .comment_box {
+                width: auto;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 5vh;
+
+                .comments_texts {
+                    display: flex;
+                    font-family: "Mont_Reg";
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #3f8cff;
+                    width: 70%;
+                    height: 7rem;
+                    color: #ffffff;
+                    border-radius: 10px;
+                    box-shadow: 0.2rem 0.2rem 0.625rem rgba(63, 140, 255, 0.25),
+                        -0.2rem -0.2rem 0.625rem rgba(63, 140, 255, 0.25),
+                        -0.2rem 0.2rem 0.625rem rgba(63, 140, 255, 0.25),
+                        0.2rem -0.2rem 0.625rem rgba(63, 140, 255, 0.25);
+                }
+
+                .comments_texts p {
+                    width: 70%;
+                    display: flex;
+                    text-align: center;
+                    font-size: 20px;
+                }
+
+                .swap_text {
+                    margin-top: 4em;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .left_arrow,
+                    .right_arrow {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 4%;
+                        height: auto;
+                    }
+
+                    .people {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+
+        .comments h1 {
+            width: 100%;
+            height: 15vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            font-size: 30px;
+        }
+
+        h1 {
+            color: $H-colors-home;
+        }
+    }
+}
+
+.homepage {
+    .promo_section {
+        .name_promo {
+            font-family: "Mont_Mid";
+        }
+
+        .photo_container {
+            .container_cards {
+                .container_card__card {
+                    .container_for_image_promo {
+                        .text {
+                            h2 {
+                                font-family: "Mont_Mid";
+                            }
+
+                            .promo_descriptions {
+                                p {
+                                    font-family: "Mont_Reg";
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .about_company {
+        width: 100%;
+        margin-top: 3em;
+        height: auto;
+
+        .company_container {
+            display: flex;
+            flex-direction: column;
+            width: auto;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+            padding-left: 10vw;
+            padding-right: 10vw;
+
+            .company_name {
+                width: 100%;
+                height: 15vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .company_name h1 {
+                font-family: "Mont_Mid";
+                font-size: 30px;
+                margin-bottom: 1em;
+            }
+
+            .company_picture_text {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 100%;
+                justify-content: space-between;
+
+                .company_picture {
+                    width: 388px;
+                    height: 100%;
+
+                    .women {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+                .company_text {
+                    width: calc(100% - 388px);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+                .company_text p {
+                    font-family: "Mont_Reg";
+                    padding-left: 3vw;
+                    padding-right: 3vw;
+                    font-size: 16px;
+                    color: #777777;
+                }
+            }
+        }
+    }
+
+    .comments {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .name_comments {
+            font-size: 30px;
+            font-family: "Mont_Mid";
+        }
+
+        .comment_box {
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 5vh;
+
+            .comments_texts {
+                display: flex;
+                font-family: "Mont_Reg";
+                justify-content: center;
+                align-items: center;
+                background-color: #3f8cff;
+                width: 70%;
+                height: 7rem;
+                color: #ffffff;
+                border-radius: 10px;
+                box-shadow: 0.2rem 0.2rem 0.625rem rgba(63, 140, 255, 0.25),
+                    -0.2rem -0.2rem 0.625rem rgba(63, 140, 255, 0.25),
+                    -0.2rem 0.2rem 0.625rem rgba(63, 140, 255, 0.25),
+                    0.2rem -0.2rem 0.625rem rgba(63, 140, 255, 0.25);
+            }
+
+            .comments_texts p {
+                width: 70%;
+                display: flex;
+                text-align: center;
+                font-size: 20px;
+            }
+
+            .swap_text {
+                margin-top: 4em;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .left_arrow,
+                .right_arrow {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 4%;
+                    height: auto;
+                }
+
+                .people {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    .comments h1 {
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 30px;
+    }
+
+    h1 {
+        color: $H-colors-home;
+    }
+}
+
+@media screen and (max-width: $desktop) {
+    .homepage {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        color: #1e1e1e;
+        margin-bottom: 2em;
+
+        .date_section {
+            display: none;
+        }
+
+        .mobile_date {
+            display: flex;
+            width: 100%;
+            height: 415px;
+            background-color: gray;
+        }
+        .promo_section {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 2em;
+            margin-bottom: 2em;
+
+            h1 {
+                margin-bottom: 1em;
+            }
+
+            .photo_container {
+                height: auto;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .container_cards {
+                    width: 100%;
+                    height: auto;
+                    white-space: nowrap;
+                    overflow-x: auto;
+                    overflow-y: hidden;
+                    display: flex;
+                    align-items: center;
+                    padding-right: 1em;
+                    padding-top: 2em;
+                    padding-bottom: 2em;
+                    scrollbar-width: none;
+
+                    .container_card__card {
+                        width: 354px;
+                        height: 351px;
+                        display: flex;
+                        background-color: white;
+                        margin-left: 1em;
+                        border-radius: 6px;
+
+                        box-shadow: 0.2rem 0.2rem 0.625rem rgba(0, 0, 0, 0.25),
+                            -0.2rem -0.2rem 0.625rem rgba(0, 0, 0, 0.25),
+                            -0.2rem 0.2rem 0.625rem rgba(0, 0, 0, 0.25),
+                            0.2rem -0.2rem 0.625rem rgba(0, 0, 0, 0.25);
+
+                        .container_for_image_promo {
+                            width: 354px;
+                            height: auto;
+                            display: flex;
+                            flex-direction: column;
+
+                            .photo {
+                                display: flex;
+                                align-items: flex-start;
+                                width: 100%;
+
+                                .image_promo {
+                                    border-top-right-radius: 6px;
+                                    border-top-left-radius: 6px;
+                                    height: auto;
+                                    width: auto;
+                                }
+                            }
+
+                            .text {
+                                width: auto;
+                                margin-top: 1em;
+                                padding-left: 0.5em;
+                                padding-right: 0.5em;
+                                text-wrap: wrap;
+
+                                h2 {
+                                    font-size: 18px;
+                                    color: #585858;
+                                }
+
+                                .promo_descriptions {
+                                    width: auto;
+
+                                    p {
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .container_cards::-webkit-scrollbar {
+                    display: none;
+                }
+            }
+        }
+
+        .about_company {
+            width: 90%;
+            max-width: 600px;
+            height: auto;
+
+            .company_container {
+                display: flex;
+                border: 1px solid #d2d2d2;
+                border-radius: 6px;
+                flex-direction: column;
+                height: auto;
+                justify-content: center;
+                align-items: center;
+                padding-left: 2em;
+                padding-right: 2em;
+
+                .company_name {
+                    margin-top: 1em;
+                    margin-bottom: 2em;
+                    display: flex;
+                    width: 100%;
+                    height: auto;
+                    flex-direction: column;
+                    text-align: center;
+                }
+
+                .company_name h1 {
+                    font-size: 18px;
+                    margin-bottom: 0;
+                }
+
+                .company_picture_text {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    height: 100%;
+                    justify-content: center;
+                    align-items: center;
+
+                    .company_picture {
+                        width: 150px;
+                        height: 100%;
+                        margin-bottom: 1em;
+
+                        .women {
+                            border-radius: 100%;
+                            width: 150px;
+                            height: 150px !important;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .company_text {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 2em;
+                    }
+                    .company_text p {
+                        text-align: center;
+                        width: auto;
+                        font-size: 16px;
+                        color: #777777;
+                        margin-bottom: 1em;
+                    }
+                }
+            }
+        }
+
+        .comments {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2em;
+
+            .comment_box {
+                width: auto;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 3vh;
+
+                .comments_texts {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #3f8cff;
+                    width: 80%;
+                    height: auto;
+                    padding-top: 1em;
+                    padding-bottom: 1em;
+                    color: #ffffff;
+                    border-radius: 10px;
+                    box-shadow: 0.2rem 0.2rem 0.625rem rgba(63, 140, 255, 0.25),
+                        -0.2rem -0.2rem 0.625rem rgba(63, 140, 255, 0.25),
+                        -0.2rem 0.2rem 0.625rem rgba(63, 140, 255, 0.25),
+                        0.2rem -0.2rem 0.625rem rgba(63, 140, 255, 0.25);
+                }
+
+                .comments_texts p {
+                    width: 70%;
+                    display: flex;
+                    text-align: center;
+                    font-size: 14px;
+                }
+
+                .swap_text {
+                    margin-top: 2em;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .left_arrow,
+                    .right_arrow {
+                        display: none;
+                    }
+                    .people {
+                        height: auto;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .noimg {
+                            width: 40px !important;
+                            height: 40px !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .comments h1 {
+            font-size: 18px;
+            height: auto;
+        }
+    }
+}

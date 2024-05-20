@@ -1,0 +1,175 @@
+@import "../variable";
+
+.account {
+    width: 100%;
+    min-height: 40em;
+    display: flex;
+
+    .sidebar {
+        width: 5%;
+        transition: 0.2s;
+        box-shadow: 0px 0.125rem 0.625rem rgba(0, 0, 0, 0.25);
+
+        .navigation_bar {
+            width: 100%;
+            height: 100%;
+            padding-top: 7em;
+            display: flex;
+            flex-direction: column;
+
+            .button {
+                width: 100%;
+                height: 15%;
+                max-height: 5em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                background-color: transparent;
+                font-size: 16px;
+                padding-left: 1em;
+
+                .image_container {
+                    width: 40%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    margin-right: 1em;
+
+                    .image {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+                .button_text {
+                    display: none;
+                    font-family: "Mont_Mid";
+                }
+            }
+        }
+    }
+
+    .main {
+        width: 95%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .sidebar {
+        width: 5%;
+        transition: 0.2s;
+        box-shadow: 0px 0.125rem 0.625rem rgba(0, 0, 0, 0.25);
+
+        .navigation_bar {
+            .button:hover {
+                background-color: rgb(238, 238, 238);
+            }
+
+            .button:active {
+                background-color: #d6d6d6;
+            }
+        }
+    }
+    .sidebar:hover {
+        width: 10%;
+        transition: 0.2s;
+
+        .navigation_bar {
+            .button {
+                justify-content: flex-start;
+                font-size: 14px;
+                .button_text {
+                    display: flex;
+                }
+
+                .image_container {
+                    width: 20%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    margin-right: 1em;
+
+                    .image {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .account {
+        width: 100%;
+        min-height: 40em;
+        display: flex;
+
+        .sidebar {
+            position: fixed;
+            background-color: white;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            width: 100%;
+            bottom: 0;
+            display: flex;
+            transition: 0.2s;
+            box-shadow: 0px 0.125rem 0.625rem rgba(0, 0, 0, 0.25);
+
+            .navigation_bar {
+                padding: 0;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                width: 100%;
+                height: 70%;
+                display: flex;
+                flex-direction: row;
+
+                .button {
+                    width: 100%;
+                    height: auto;
+                    max-height: 5em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: none;
+                    background-color: transparent;
+                    font-size: 16px;
+                    padding-top: 1em;
+                    padding-bottom: 1em;
+
+                    .image_container {
+                        width: 30%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: flex-start;
+                        margin-right: 1em;
+
+                        .image {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+
+                    .button_text {
+                        display: none;
+                        font-family: "Mont_Mid";
+                    }
+                }
+            }
+        }
+
+        .main {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

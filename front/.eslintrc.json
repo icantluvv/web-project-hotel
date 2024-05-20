@@ -1,0 +1,11 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "import/no-unresolved": [
+      "error",
+      {
+        "ignore": [".module.scss", ".module.sass", ".module.css"]
+      }
+    ]
+  }
+}

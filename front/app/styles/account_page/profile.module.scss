@@ -1,0 +1,29 @@
+@import "../variable";
+@import "./account.module.scss";
+
+.button {
+    width: auto;
+    height: 15%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 2em;
+
+    .image_container {
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        margin-right: 1em;
+
+        .image {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .button_text {
+        display: flex;
+        font-family: "Mont_Mid";
+    }
+}

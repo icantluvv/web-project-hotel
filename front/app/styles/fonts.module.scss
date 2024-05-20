@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "Mont_Bold";
+    src: url("/next_website/public/fonts/Montserrat-Bold.ttf")
+        format("truetype"); /* Добавьте URL шрифта с сервера Google Fonts */
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Mont_Reg";
+    src: url("/next_website/public/fonts/Montserrat-Regular.ttf")
+        format("truetype"); /* Добавьте URL шрифта с сервера Google Fonts */
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Mont_Medium";
+    src: url("/next_website/public/fonts/Montserrat-Medium.ttf")
+        format("truetype"); /* Добавьте URL шрифта с сервера Google Fonts */
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Mont_Semi";
+    src: url("/next_website/public/fonts/Montserrat-SemiBold.ttf")
+        format("truetype"); /* Добавьте URL шрифта с сервера Google Fonts */
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Mont_Light";
+    src: url("/next_website/public/fonts/Montserrat-Light.ttf")
+        format("truetype"); /* Добавьте URL шрифта с сервера Google Fonts */
+    font-weight: 100;
+    font-style: normal;
+}

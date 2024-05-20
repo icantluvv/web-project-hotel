@@ -1,0 +1,119 @@
+.minicart {
+    position: fixed;
+    margin-top: 2em;
+    right: 2em;
+    height: auto;
+    width: auto;
+    z-index: 1000;
+    display: flex;
+
+    .minicart_close {
+        position: absolute;
+        right: 0;
+        width: 70px;
+        height: 70px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+
+    .minicart_open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 500px;
+        width: 350px;
+        background-color: white;
+        border-radius: 6px;
+        overflow-y: auto;
+        box-shadow: 0.1rem 0.1rem 0.325rem rgba(0, 0, 0, 0.15),
+            -0.1rem -0.1rem 0.325rem rgba(0, 0, 0, 0.15),
+            -0.1rem 0.1rem 0.325rem rgba(0, 0, 0, 0.15),
+            0.1rem -0.1rem 0.325rem rgba(0, 0, 0, 0.15);
+
+        .close_button {
+            position: absolute;
+            background-color: transparent;
+            border: none;
+            right: 7px;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            margin-top: 0.5em;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .title {
+            font-size: 22px;
+            margin-top: 1em;
+            text-align: center;
+            font-family: "Mont_Mid";
+        }
+
+        .product_carts {
+            margin-top: 2em;
+            height: auto;
+            width: 90%;
+            flex: 1;
+
+            .product_cart {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .go_to_order {
+            width: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            background-color: rgb(245, 245, 245);
+            border-radius: 6px;
+
+            .button_go_order {
+                max-width: 365px;
+                width: 80%;
+                height: 3.5em;
+                background-color: transparent;
+                border: none;
+                background-color: black;
+                border-radius: 10px;
+                color: white;
+                font-size: 14px;
+                font-family: "Mont_Mid";
+                margin-bottom: 1em;
+            }
+
+            .finally_price {
+                width: 100%;
+                max-width: 365px;
+                height: auto;
+                background-color: transparent;
+                border: none;
+                border-radius: 10px;
+                color: black;
+                font-family: "Mont_Mid";
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 1em;
+
+                .text_price {
+                    font-size: 14px;
+                    margin-top: 1em;
+                    display: flex;
+                    width: 85%;
+                    justify-content: space-between;
+                    align-items: flex-end;
+
+                    .price {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
