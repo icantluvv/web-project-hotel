@@ -1,5 +1,5 @@
 export async function getOneRoom(id: number): Promise<RoomCard> {
-    const response = await fetch(`http://127.0.0.1:7777/api/room/${id}`, {
+    const response = await fetch(`${process.env.baseApi}room/${id}`, {
         cache: "no-store",
         credentials: "same-origin",
     })

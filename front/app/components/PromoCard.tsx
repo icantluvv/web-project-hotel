@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const PromoCard: React.FC<PromoProps> = ({ promo }) => {
 
-  const BaseUrl = "http://127.0.0.1:7777/api/promo/image/";
+  const BaseUrl = `${process.env.baseApi}promo/image/`
   return (
     <div className={styles.container_card__card}>
       <div className={styles.container_for_image_promo}>

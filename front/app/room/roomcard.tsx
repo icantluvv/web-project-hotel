@@ -5,7 +5,7 @@ import Link from "next/link"
 import ButtonSelect from "./ButtonSelect"
 
 const RoomCard: React.FC<RoomCardProps> = ({ card }) => {
-    const baseUrlPhoto = "http://127.0.0.1:7777/api/room/image/"
+    const baseUrlPhoto = `${process.env.baseApi}room/image/`
     return (
         <div className={styles.cards__card}>
             <div className={styles.card_info_container}>

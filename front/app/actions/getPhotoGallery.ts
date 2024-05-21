@@ -1,8 +1,8 @@
 export async function getGalleryPhoto(): Promise<GalleryPhoto[]> {
-    const response = await fetch('http://127.0.0.1:7777/api/gallery', {
+    const response = await fetch(`${process.env.baseApi}gallery`, {
         cache: "no-store",
-        credentials: 'same-origin'
-    });
+        credentials: "same-origin",
+    })
     const data = await response.json();
     
     const galleryPhotos: GalleryPhoto[] = data.map((item: any) => ({

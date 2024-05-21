@@ -4,7 +4,7 @@ export function Register(
     password: string
 ): Promise<{ token: string }> {
     return new Promise<{ token: string }>((resolve, reject) => {
-        fetch("http://127.0.0.1:7777/api/auth/register", {
+        fetch(`${process.env.baseApi}auth/register`, {
             method: "POST",
             headers: {
                 accept: "application/json",

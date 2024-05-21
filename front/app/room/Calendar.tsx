@@ -45,6 +45,7 @@ const Calendar = () => {
                 value={firstDate}
                 onChange={handleFirstDateChange}
             />
+
             <input
                 className={styles.input_date}
                 type="date"

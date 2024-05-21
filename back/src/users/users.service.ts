@@ -33,14 +33,20 @@ export class UsersService {
       );
     }
     dotenv.config();
+
+    // const hashSaltRounds = 10;
+
     const hashedPassword = await bcrypt.hash(dto.password, this.hashSaltRounds);
+    // const hashedPassword = await bcrypt.hash(dto.password, hashSaltRounds);
 
     const user = await this.repository.save({
       email: dto.email,
       username: dto.username,
       password: hashedPassword,
+      // password: dto.password,
     });
     user.password = hashedPassword;
+    // user.password = dto.password;
     const cart = await this.cartService.createCart(user);
     user.cart = cart;
 

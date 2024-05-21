@@ -3,7 +3,7 @@ export function Login(
     password: string
 ): Promise<{ token: string }> {
     return new Promise<{ token: string }>((resolve, reject) => {
-        fetch("http://127.0.0.1:7777/api/auth/login", {
+        fetch(`${process.env.baseApi}auth/login`, {
             method: "POST",
             headers: {
                 accept: "application/json",

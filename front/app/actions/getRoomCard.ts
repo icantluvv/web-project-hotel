@@ -1,8 +1,8 @@
 export async function getRoomCards(): Promise<RoomCard> {
-    const response = await fetch('http://127.0.0.1:7777/api/room', {
+    const response = await fetch(`${process.env.baseApi}room`, {
         cache: "no-store",
-        credentials: 'same-origin'
-    });
+        credentials: "same-origin",
+    })
     const data = await response.json();
     const RoomCards: RoomCard = data.map((item: any) => ({
         id: item.id,

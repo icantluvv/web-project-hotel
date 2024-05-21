@@ -1,5 +1,5 @@
 export async function GetCart(): Promise<CartItem[]> {
-    const response = await fetch("http://127.0.0.1:7777/api/cart", {
+    const response = await fetch(`${process.env.baseApi}cart`, {
         method: "GET",
         headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,

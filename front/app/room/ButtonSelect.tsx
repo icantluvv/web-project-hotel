@@ -19,7 +19,7 @@ export default function ProductButton({ card, choose }: any) {
             return
         }
 
-        fetch("http://127.0.0.1:7777/api/cart/addProductToCart", {
+        fetch(`${process.env.baseApi}cart/addProductToCart`, {
             method: "POST",
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`,
