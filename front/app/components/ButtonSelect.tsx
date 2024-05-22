@@ -1,5 +1,4 @@
 "use client"
-// import { putToCart } from "../lib/putToCart"
 import styles from "../styles/rooms/roomcard.module.scss"
 
 export default function ProductButton({ card, choose }: any) {
