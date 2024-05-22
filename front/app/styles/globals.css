@@ -13,6 +13,16 @@ a {
     text-decoration: none;
 }
 
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
 ul {
     list-style: none;
     padding: 0;

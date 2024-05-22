@@ -3,7 +3,7 @@
 import React from "react"
 import styles from "../styles/info.module.scss"
 import { getGalleryCategory } from "../actions/getGalleryCategory"
-import GalleryCards from "./GalleryCards"
+import GalleryCards from "../components/GalleryCards"
 
 export default async function Information() {
     const GalleryCategory = await getGalleryCategory()

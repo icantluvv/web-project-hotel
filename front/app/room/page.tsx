@@ -1,8 +1,8 @@
 import styles from "../styles/rooms/rooms.module.scss"
 import Image from "next/image"
-import RoomCard from "./roomcard"
+import RoomCard from "../components/roomcard"
 import { getRoomCards } from "../actions/getRoomCard"
-import Calendar from "./Calendar"
+import Calendar from "../components/Calendar"
 
 export default async function Rooms() {
     const Cards = await getRoomCards()

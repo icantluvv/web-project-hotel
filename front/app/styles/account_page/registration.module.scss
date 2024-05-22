@@ -55,8 +55,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
         .button_signup {
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -webkit-transition: background-color 0.3s;
+            -moz-transition: background-color 0.3s;
+            border: 2px solid black;
             width: 35%;
             max-width: 250px;
             height: 100%;
