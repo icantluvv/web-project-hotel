@@ -23,7 +23,16 @@
             color: white;
             font-size: 14px;
             font-family: "Mont_Mid";
+            transition: 0.2s;
             margin-bottom: 1em;
+        }
+        .button_go_order:hover {
+            background-color: rgb(65, 65, 65);
+            transition: 0.2s;
+        }
+        .button_go_order:active {
+            background-color: rgb(97, 97, 97);
+            transition: 0.2s;
         }
 
         .finally_price {
@@ -46,12 +55,12 @@
                 background-color: transparent;
                 width: 85%;
                 height: 4em;
-                // padding-left: 1em;
-                // padding-right: 1em;
                 border-radius: 10px;
+                padding-left: 1em;
                 font-family: "Mont_Reg";
                 font-size: 12px;
                 border: 2px solid #d5d5d5;
+                box-sizing: border-box;
             }
 
             .go_code {
@@ -60,15 +69,23 @@
                 display: flex;
                 justify-content: flex-end;
                 .go_code_button {
-                    padding-left: 0.4em;
-                    padding-right: 0.4em;
-                    height: 2.5em;
+                    padding-left: 0.7em;
+                    padding-right: 0.7em;
+                    height: 3em;
                     background-color: black;
                     color: white;
                     font-size: 12px;
                     font-family: "Mont_Mid";
                     border-radius: 5px;
                     border: none;
+                }
+                .go_code_button:hover {
+                    background-color: rgb(65, 65, 65);
+                    transition: 0.2s;
+                }
+                .go_code_button:active {
+                    background-color: rgb(97, 97, 97);
+                    transition: 0.2s;
                 }
             }
 
@@ -165,6 +182,18 @@
                     border: none;
                     background-color: rgb(245, 245, 245);
                     font-family: "Mont_Mid";
+                    transition: 0.2s;
+                }
+
+                .button_delete:hover {
+                    background-color: black;
+                    transition: 0.2s;
+                    color: white;
+                }
+                .button_delete:active {
+                    background-color: rgb(97, 97, 97);
+                    transition: 0.2s;
+                    color: white;
                 }
 
                 .price {

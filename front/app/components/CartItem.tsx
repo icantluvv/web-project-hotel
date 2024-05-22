@@ -47,7 +47,7 @@ const CartItem = () => {
                     <div className={styles.item_container} key={index}>
                         <div className={styles.image_container}>
                             <Image
-                                src={`http://127.0.0.1:7777/api/room/image/${item.room.image}`}
+                                src={`${process.env.baseApi}room/image/${item.room.image}`}
                                 layout="responsible"
                                 width={100}
                                 height={100}
@@ -103,11 +103,15 @@ const CartItem = () => {
                     </div>
                     <div className={styles.text_price}>
                         <p>Финальная стоимость:</p>
-                        {cart.map((item, index) => (
-                            <p key={index} className={styles.price}>
-                                {item.price}р
-                            </p>
-                        ))}
+                        {cart.length > 0 ? (
+                            cart.map((item, index) => (
+                                <p key={index} className={styles.price}>
+                                    {item.price || 0}р
+                                </p>
+                            ))
+                        ) : (
+                            <p className={styles.price}>0р</p>
+                        )}
                     </div>
                 </form>
             </div>
