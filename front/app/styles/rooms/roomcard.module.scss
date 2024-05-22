@@ -184,11 +184,16 @@
                             rgba(63, 140, 255, 0.5);
                         font-family: "Mont_Reg";
                     }
+                    .button_select:hover {
+                        background-color: rgb(47, 92, 160);
+                    }
+                    .button_select:active {
+                        background-color: rgb(25, 55, 99);
+                    }
                 }
             }
         }
     }
-
     .cards__card:hover {
         transform: scale(1.02);
         transition: 0.2s;

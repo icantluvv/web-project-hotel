@@ -2,7 +2,7 @@
 
 import React from "react"
 import styles from "../../styles/finish.module.scss"
-import EndOrderButton from "./EndOrderButton"
+import EndOrderButton from "../../components/EndOrderButton"
 
 const page = () => {
     return (
