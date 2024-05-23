@@ -8,18 +8,18 @@ const Calendar = () => {
 
     const handleFirstDateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const inputDate = new Date(e.target.value)
-        const tomorrow = new Date()
-        tomorrow.setHours(0, 0, 0, 0)
+        const yesterday = new Date()
+        yesterday.setDate(yesterday.getDate() - 1)
+        yesterday.setHours(0, 0, 0, 0)
         inputDate.setHours(0, 0, 0, 0)
 
-        const nextDay = new Date()
-        nextDay.setDate(tomorrow.getDate() + 1)
-        nextDay.setHours(0, 0, 0, 0)
-
-        if (inputDate >= nextDay) {
+        if (inputDate > yesterday) {
             setFirstDate(e.target.value)
+            if (secondDate && new Date(secondDate) <= inputDate) {
+                setSecondDate("")
+            }
         } else {
-            alert("Дата должна быть не раньше завтрашнего дня")
+            alert("Дата заезда не может быть прошедшим числом")
         }
     }
 
@@ -29,10 +29,18 @@ const Calendar = () => {
         inputDate.setHours(0, 0, 0, 0)
         firstInputDate.setHours(0, 0, 0, 0)
 
-        if (inputDate > firstInputDate) {
+        const firstDateForComparison = new Date(firstInputDate)
+        firstDateForComparison.setDate(firstDateForComparison.getDate() + 1)
+
+        if (inputDate >= firstDateForComparison) {
             setSecondDate(e.target.value)
-        } else {
-            alert("Дата должна быть позже первой даты")
+        }
+    }
+
+    const handleFirstDateFocus = (e: React.FocusEvent<HTMLInputElement>) => {
+        const currentDate = new Date().toISOString().split("T")[0]
+        if (e.target.value === currentDate) {
+            e.target.value = ""
         }
     }
 
@@ -44,6 +52,7 @@ const Calendar = () => {
                 id="first_date"
                 value={firstDate}
                 onChange={handleFirstDateChange}
+                onFocus={handleFirstDateFocus}
             />
 
             <input
